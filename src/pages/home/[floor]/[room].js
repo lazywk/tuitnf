@@ -1,8 +1,9 @@
-import { Box, Card, CardContent, Checkbox, Input, Radio, Typography } from '@mui/material'
+import { Box, Button, Card, CardContent, Checkbox, Input, Radio, Typography } from '@mui/material'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React from 'react'
 import Breadcrumbs from '@mui/material/Breadcrumbs';
+import IconifyIcon from 'src/@core/components/icon';
 
 export default function Room() {
     const { query } = useRouter()
@@ -36,6 +37,14 @@ export default function Room() {
                         </Card>
                     ))
                 }
+            </Box>
+            <Box sx={{ margin: '20px auto', display: 'flex', justifyContent: 'center', gap: '30px' }}>
+                <Button variant='contained' startIcon={<IconifyIcon icon={'ooui:previous-ltr'} />}>
+                    Oldingi Xona
+                </Button>
+                <Button variant='contained' endIcon={<IconifyIcon icon={'ooui:next-ltr'} />}>
+                    KEYINGI Xona
+                </Button>
             </Box>
         </Box>
     )
