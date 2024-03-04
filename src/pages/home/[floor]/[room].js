@@ -11,7 +11,7 @@ export default function Room() {
         <Box>
             <Breadcrumbs aria-label="breadcrumb">
                 <Link underline="hover" color="inherit" href="/home" style={{ textDecoration: 'none' }}>
-                    Asosiy
+                    Yo'qlama
                 </Link>
                 <Link underline="hover" color="inherit" href={`/home/${query.floor}`} style={{ textDecoration: 'none' }}>
                     {query.floor}-Qavat

@@ -13,7 +13,7 @@ export default function Room() {
         <Box>
             <Breadcrumbs aria-label="breadcrumb">
                 <Link underline="hover" color="inherit" href="/home" style={{ textDecoration: 'none' }}>
-                    Asosiy
+                    Yo'qlama
                 </Link>
                 <Typography color="text.primary">{query.floor}-Qavat</Typography>
             </Breadcrumbs>
